@@ -20,7 +20,7 @@
         <a class="nav-link" href="#">Update profile</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sign Out</a>
+        <a class="nav-link" href="{{ route('signout') }}">Sign Out</a>
       </li>
       @else
       <li class="nav-item">

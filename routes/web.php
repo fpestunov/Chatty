@@ -19,6 +19,8 @@ Route::post('/signup', 'AuthController@postSignup');
 Route::get('/signin', 'AuthController@getSignin')->name('signin');
 Route::post('/signin', 'AuthController@postSignin');
 
+Route::get('/signout', 'AuthController@getSignout')->name('signout');
+
 Route::get('/alert', function() {
     return redirect()->route('home')->with('info', 'You have signed up!');
 });
