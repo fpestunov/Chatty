@@ -13,6 +13,9 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::get('/signup', 'AuthController@getSignup')->name('signup');
+Route::post('/signup', 'AuthController@postSignup');
+
 Route::get('/alert', function() {
     return redirect()->route('home')->with('info', 'You have signed up!');
 });
