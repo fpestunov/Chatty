@@ -11,6 +11,16 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Friends</a>
       </li>
+
+      <li class="nav-item">
+<form class="form-inline" method="GET" action="{{ route('search') }}">
+  <label class="sr-only" for="inlineFormInputName2">Name</label>
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" name="query" placeholder="Jane Doe">
+
+  <button type="submit" class="btn btn-outline-secondary mb-2">Search</button>
+</form>
+      </li>
+
       @endif
       @if (Auth::check())
       <li class="nav-item">
