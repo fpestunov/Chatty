@@ -54,4 +54,9 @@ class User extends Authenticatable
     {
         return $this->first_name ?: $this->username;
     }
+
+    public function getGravatarUrl()
+    {
+        return "https://www.gravatar.com/avatar/{{ md5($this->email) }}?d=mm&s=40";
+    }
 }

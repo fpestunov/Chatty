@@ -1,6 +1,6 @@
 <div class="media">
     <a href="#" class="pull-left">
-        <img src="" alt="" class="media-object">
+        <img src="{{ $user->getGravatarUrl() }}" alt="{{ $user->getNameOrUsername() }}" class="media-object">
     </a>
     <div class="media-body">
         <h4 class="media-heading"><a href="#">{{ $user->getNameOrUsername() }}</a></h4>
