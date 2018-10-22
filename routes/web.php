@@ -25,6 +25,9 @@ Route::get('/search', 'SearchController@getResults')->name('search');
 
 Route::get('/user/{username}', 'ProfileController@getProfile')->name('profile');
 
+Route::get('/profile/edit', 'ProfileController@getEdit')->name('profile.edit');
+Route::post('/profile/edit', 'ProfileController@postEdit');
+
 Route::get('/alert', function() {
     return redirect()->route('home')->with('info', 'You have signed up!');
 });
