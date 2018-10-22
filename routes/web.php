@@ -23,6 +23,8 @@ Route::get('/signout', 'AuthController@getSignout')->name('signout');
 
 Route::get('/search', 'SearchController@getResults')->name('search');
 
+Route::get('/user/{username}', 'ProfileController@getProfile')->name('profile');
+
 Route::get('/alert', function() {
     return redirect()->route('home')->with('info', 'You have signed up!');
 });

@@ -24,7 +24,7 @@
       @endif
       @if (Auth::check())
       <li class="nav-item">
-        <b>{{ Auth::user()->getNameOrUsername() }}</b>
+        <b><a href="{{ route('profile', ['username' => Auth::user()->username]) }}">{{ Auth::user()->getNameOrUsername() }}</a></b>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Update profile</a>
