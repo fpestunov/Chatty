@@ -6,4 +6,4 @@ php artisan make:controller AuthController
 php artisan make:controller SearchController
 php artisan make:controller ProfileController
 php artisan make:migration create_friends_table
-php artisan make:controller ProfileController
+php artisan make:controller FriendController
