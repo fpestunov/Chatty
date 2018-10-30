@@ -97,7 +97,7 @@ class User extends Authenticatable
 
     public function addFriend(User $user)
     {
-        $this->friendOf()->attach($user->id);
+        $this->friendsOf()->attach($user->id);
     }
 
     public function acceptFriendRequest(User $user)

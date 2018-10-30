@@ -29,6 +29,7 @@ Route::get('/profile/edit', 'ProfileController@getEdit')->name('profile.edit');
 Route::post('/profile/edit', 'ProfileController@postEdit');
 
 Route::get('/friends', 'FriendController@getIndex')->name('friends'); // 'middleware' => ['auth']
+Route::get('/friends/add/{username}', 'FriendController@getAdd')->name('friend.add'); // 'middleware' => ['auth']
 
 Route::get('/alert', function() {
     return redirect()->route('home')->with('info', 'You have signed up!');
